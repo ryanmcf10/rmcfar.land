@@ -5,6 +5,13 @@
         <title>Ryan McFarland</title>
         <link rel="stylesheet" href="./static/styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
+        <link rel="manifest" href="static/favicon/site.webmanifest">
+
         <style>
         html {
             background: rgb(63, 82, 99);
@@ -39,10 +46,22 @@
 
         .bio {
             font-weight: 550;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .bio i {
+            font-size: 1.5em;
+        }
+
+        .bio a {
+            text-decoration: none;
+            color: inherit;
         }
 
         .bio ul {
             list-style: none;
+            display: inline;
             margin: 0;
             padding: 0;
             font-size: 1em;
@@ -53,9 +72,30 @@
             padding: 0 1em;
         }
 
-        .bio ul li:first-child {
+        .bio-left li:first-child {
             padding-left: 0;
         }
+
+        .bio-right li:last-child {
+            padding-right: 0;
+        }
+
+        .email:hover {
+            color: rgb(227, 80, 75);
+        }
+
+        .linkedin:hover {
+            color: rgb(56, 58, 138);
+        }
+
+        .github:hover {
+            color: lightgrey;
+        }
+
+        .twitter:hover {
+            color: skyblue;
+        }
+
         </style>
     </head>
     <body>
@@ -63,12 +103,15 @@
             <h1 class="name">Ryan<br/>McFarland</h1>
             <hr />
             <div class="bio">
-                <ul>
+                <ul class="bio-left">
                     <li>Software Engineer</li>
                     <li>Harrisburg, PA</li>
-                    <li>LinkedIn</li>
-                    <li>GitHub</li>
-                    <li>Twitter</li>
+                </ul>
+                <ul class="bio-right">
+                    <li><a href="mailto:ryanmcf10@gmail.com" target="_blank" class="email"><i class="ri-mail-fill"></i></a></li>
+                    <li><a href="https://linkedin.com/in/ryanmcf10/" target="_blank" class="linkedin"><i class="ri-linkedin-box-fill"></i></a></li>
+                    <li><a href="https://github.com/ryanmcf10/" target="_blank" class="github"><i class="ri-github-fill"></i></a></li>
+                    <li><a href="https://twitter.com/ryanmcf10/" target="_blank" class="twitter"><i class="ri-twitter-fill"></i></a></li>
                 </ul>
             </div>
         </div>
